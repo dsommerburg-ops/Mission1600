@@ -247,7 +247,7 @@ function showMissionSolved() {
             <p>
 
                 Der veränderte Buchstabe führt euch
-                zum ersten Hüter.
+                zum ersten Tippgeber.
 
             </p>
 
