@@ -7,7 +7,7 @@
 const CONFIG = {
     startBudget: 1600,
     minuteLoss: 0.01,
-    startDate: new Date("2026-05-25T17:00:00"),
+    startDate: new Date("2026-07-04T17:00:00"),
     finalCode: "52.966585, 10.531524"
 };
 
