@@ -1,0 +1,296 @@
+/* ===== MISSION 1600 ===== */
+
+:root{
+--bg:#081320;
+--card:#12263d;
+--gold:#FFD54A;
+--text:#f5f7fb;
+--light:#c7d2df;
+--green:#2ecc71;
+--red:#e74c3c;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(180deg,#081320,#16324e);
+color:var(--text);
+min-height:100vh;
+}
+
+.container{
+width:min(1100px,92%);
+margin:auto;
+padding:40px 0 80px;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+text-align:center;
+margin-bottom:50px;
+}
+
+.eyebrow{
+color:var(--gold);
+letter-spacing:5px;
+font-size:.8rem;
+text-transform:uppercase;
+}
+
+header h1{
+font-size:4rem;
+margin:10px 0;
+}
+
+.subtitle{
+color:var(--light);
+font-size:1.1rem;
+}
+
+/* ---------- KARTEN ---------- */
+
+.card{
+background:rgba(18,38,61,.95);
+border-radius:20px;
+padding:30px;
+margin-bottom:30px;
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.card h2{
+color:var(--gold);
+margin-bottom:20px;
+}
+
+/* ---------- DASHBOARD ---------- */
+
+#dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+margin-bottom:30px;
+}
+
+#budget{
+font-size:2.5rem;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.progress{
+height:14px;
+background:#29445d;
+border-radius:20px;
+overflow:hidden;
+}
+
+#progress-bar{
+height:100%;
+width:100%;
+background:linear-gradient(90deg,#FFD54A,#ffb800);
+transition:.4s;
+}
+
+#elapsed{
+line-height:1.9;
+}
+
+/* ---------- STATUS ---------- */
+
+#status{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:30px;
+}
+
+.status-card{
+background:var(--card);
+padding:22px;
+border-radius:16px;
+text-align:center;
+}
+
+.status-card span{
+display:block;
+margin-bottom:10px;
+color:var(--light);
+}
+
+.status-card strong{
+font-size:1.4rem;
+}
+
+/* ---------- STORY ---------- */
+
+#story p{
+line-height:1.8;
+margin-bottom:16px;
+color:var(--light);
+}
+
+/* ---------- LOGO ---------- */
+
+#logo-section{
+text-align:center;
+}
+
+#logo{
+width:min(420px,100%);
+display:block;
+margin:30px auto;
+transition:.3s;
+}
+
+#logo:hover{
+transform:scale(1.03);
+}
+
+/* ---------- BUTTON ---------- */
+
+button{
+width:100%;
+padding:18px;
+border:none;
+border-radius:14px;
+cursor:pointer;
+font-size:1rem;
+font-weight:700;
+background:linear-gradient(135deg,#FFD54A,#ffb800);
+color:#111;
+transition:.3s;
+}
+
+button:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(255,213,74,.35);
+}
+
+button:disabled{
+opacity:.7;
+cursor:default;
+}
+
+/* ---------- MISSION ---------- */
+
+#missionArea{
+margin-top:25px;
+}
+
+textarea,
+input{
+width:100%;
+padding:18px;
+background:#091522;
+color:white;
+border:2px solid #2a4763;
+border-radius:14px;
+font-family:Poppins,sans-serif;
+font-size:1rem;
+margin:18px 0;
+}
+
+textarea{
+resize:vertical;
+min-height:130px;
+}
+
+textarea:focus,
+input:focus{
+outline:none;
+border-color:var(--gold);
+}
+
+/* ---------- ERFOLG ---------- */
+
+.success{
+margin-top:25px;
+padding:30px;
+border-radius:18px;
+background:linear-gradient(135deg,rgba(46,204,113,.18),rgba(46,204,113,.08));
+border:2px solid rgba(46,204,113,.35);
+text-align:center;
+animation:fade .5s;
+}
+
+.success h2{
+color:#6bf39d;
+margin-bottom:20px;
+}
+
+.phoneCard{
+margin:25px auto;
+width:220px;
+padding:18px;
+border-radius:14px;
+background:var(--gold);
+color:#111;
+font-size:1.4rem;
+font-weight:700;
+}
+
+/* ---------- FEHLER ---------- */
+
+.error{
+margin-top:20px;
+padding:20px;
+border-radius:14px;
+background:#4b1d1d;
+border-left:6px solid var(--red);
+}
+
+/* ---------- FINALE ---------- */
+
+.hidden{
+display:none;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+margin-top:60px;
+text-align:center;
+color:#9db0c2;
+}
+
+/* ---------- ANIMATION ---------- */
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* ---------- HANDY ---------- */
+
+@media(max-width:768px){
+
+header h1{
+font-size:2.8rem;
+}
+
+#budget{
+font-size:2rem;
+}
+
+.card{
+padding:22px;
+}
+
+}

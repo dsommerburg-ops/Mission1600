@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MISSION 1600 – Hochzeitsgeschenk</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
+    <header>
+
+        <span class="eyebrow">
+
+            Mission
+
+        </span>
+
+        <h1>
+
+            Hochzeitsgeschenk
+
+        </h1>
+
+        <p class="subtitle">
+
+            Schnell sein lohnt sich!
+
+        </p>
+
+    </header>
+
+
+
+    <!-- ========================================= -->
+    <!-- DASHBOARD -->
+    <!-- ========================================= -->
+
+    <section id="dashboard">
+
+        <article class="card">
+
+            <h2>💰 Aktuelles Geschenk</h2>
+
+            <div id="budget">
+
+                1.600,00 €
+
+            </div>
+
+            <div class="progress">
+
+                <div id="progress-bar"></div>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="card">
+
+            <h2>⏱ Verstrichene Zeit</h2>
+
+            <div id="elapsed">
+
+                0 Tage<br>
+                0 Stunden<br>
+                0 Minuten<br>
+                0 Sekunden
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- STATUS -->
+    <!-- ========================================= -->
+
+    <section id="status">
+
+        <div class="status-card">
+
+            <span>Startbudget</span>
+
+            <strong>
+
+                1.600,00 €
+
+            </strong>
+
+        </div>
+
+        <div class="status-card">
+
+            <span>Bereits verloren</span>
+
+            <strong id="lostMoney">
+
+                0,00 €
+
+            </strong>
+
+        </div>
+
+        <div class="status-card">
+
+            <span>Noch vorhanden</span>
+
+            <strong id="remainingPercent">
+
+                100 %
+
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- STORY -->
+    <!-- ========================================= -->
+
+    <section class="card" id="story">
+
+        <h2>
+
+            🦉 Willkommen
+
+        </h2>
+
+        <p>
+
+            Wenn ihr diese Seite gefunden habt,
+            habt ihr bereits den ersten Teil eures Hochzeitsgeschenks gelöst.
+
+        </p>
+
+        <p>
+
+            Doch wir wären nicht euer Stammtisch,
+            wenn wir euch den Rest einfach so überreichen würden.
+
+        </p>
+
+        <p>
+
+            Jeder von uns ist einen Teil des Weges.
+
+        </p>
+
+        <p>
+
+            Mit jeder Minute verliert euer Geschenk
+            ein klein wenig an Wert.
+
+        </p>
+
+        <p>
+
+            Findet den ersten Hinweis
+            und startet eure Mission.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- WAPPEN -->
+    <!-- ========================================= -->
+
+    <section class="card" id="logo-section">
+
+        <h2>
+
+            Das Wappen
+
+        </h2>
+
+        <img
+
+            src="img/logo.png"
+
+            id="logo"
+
+            alt="Kugelclub Wappen">
+
+        <p>
+
+            Im Wappen befindet sich genau
+            <strong>eine</strong>
+            Unstimmigkeit.
+
+        </p>
+
+        <p>
+
+            Beschreibt möglichst genau,
+            was verändert wurde.
+
+        </p>
+
+
+        <!--
+            Dieser Bereich wird später
+            komplett durch JavaScript ersetzt.
+        -->
+
+        <div id="missionArea">
+
+            <button id="startGame">
+
+                🔍 Ich habe den Fehler gefunden
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- FINALE -->
+    <!-- ========================================= -->
+
+    <section class="card hidden" id="finalSection">
+
+        <h2>
+
+            🎉 Letzte Mission
+
+        </h2>
+
+        <p>
+
+            Gib die richtige Lösung aller Telefonate ein!
+
+        </p>
+
+        <p>
+
+            Gebt sie hier ein,
+            um den Zielort freizuschalten.
+
+        </p>
+
+        <input
+
+            id="finalCode"
+
+            type="text"
+
+            placeholder="Koordinaten eingeben">
+
+        <button id="checkFinal">
+
+            Ziel freischalten
+
+        </button>
+
+        <div id="finalResult"></div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+
+    <footer>
+
+        MISSION 1600 · Kugelclub V.2020
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
